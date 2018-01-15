@@ -1,0 +1,3 @@
+project=fake_project_runner
+test=minitest
+template=erb
