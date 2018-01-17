@@ -1,6 +1,7 @@
 require 'rake'
 require 'hanami/rake_tasks'
 require 'rake/testtask'
+require 'sneakers/tasks'
 
 Rake::TestTask.new do |t|
   t.pattern = 'spec/**/*_spec.rb'
