@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'bunny'
 gem 'rake'
 gem 'hanami',       '~> 1.1'
 gem 'hanami-model', '~> 1.1'
@@ -19,6 +18,7 @@ group :test, :development do
   gem 'dotenv', '~> 2.0'
   gem 'byebug'
   gem 'pry'
+  gem 'pry-byebug'
 end
 
 group :test do

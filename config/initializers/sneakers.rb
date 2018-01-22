@@ -3,6 +3,7 @@ Sneakers.configure  amqp: 'amqp://guest:guest@localhost:5672',
                     exchange: 'amq.topic',
                     exchange_type: :topic,
                     durable: true,
-                    workers: 1
+                    workers: 1,
+                    timeout_job_after: 300
 
 Sneakers.logger.level = Logger::INFO

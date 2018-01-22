@@ -4,7 +4,7 @@ Hanami::Model.migration do
       primary_key :id
       foreign_key :project_run_id, :project_runs, on_delete: :cascade, null: false
 
-      column :status, String, dafault: 'waiting'
+      column :status, String, default: 'waiting'
       column :test_id, Integer, null: false
       column :progress, Integer
       column :started_at, DateTime
