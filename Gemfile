@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rake'
+gem 'bunny'
+gem 'dry-events'
 gem 'hanami',       '~> 1.1'
 gem 'hanami-model', '~> 1.1'
+gem 'rake'
 
 gem 'pg'
 
@@ -15,8 +17,8 @@ group :development do
 end
 
 group :test, :development do
-  gem 'dotenv', '~> 2.0'
   gem 'byebug'
+  gem 'dotenv', '~> 2.0'
   gem 'pry'
   gem 'pry-byebug'
 end

@@ -25,6 +25,10 @@ GEM
     dry-core (0.4.2)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.0)
+    dry-events (0.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4)
+      dry-equalizer (~> 0.2)
     dry-initializer (1.4.1)
     dry-logic (0.4.2)
       dry-container (~> 0.2, >= 0.2.6)
@@ -168,9 +172,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bunny
   byebug
   capybara
   dotenv (~> 2.0)
+  dry-events
   hanami (~> 1.1)
   hanami-model (~> 1.1)
   minitest

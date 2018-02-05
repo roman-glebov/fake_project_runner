@@ -10,4 +10,8 @@ class ProjectRunRepository < Hanami::Repository
   def find_with_test_runs(id)
     aggregate(:test_runs).where(id: id).as(ProjectRun).one
   end
+
+  def find_by_cf_project_run_id(id)
+    project_runs.where(cf_project_run_id: id).one
+  end
 end
